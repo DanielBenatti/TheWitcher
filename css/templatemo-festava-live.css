@@ -349,7 +349,7 @@ strong {
   SITE HEADER              
 -----------------------------------------*/
 .site-header {
-  background-color: var(--primary-color);
+  background-color: var(--dark-color);
   padding-top: 12px;
   padding-bottom: 12px;
 }
@@ -380,6 +380,11 @@ strong {
   color: var(--white-color);
   font-size: var(--h5-font-size);
   font-weight: var(--font-weight-bold);
+}
+@media screen and (max-width: 500){
+  .icone{
+    display: none;
+  }
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -694,22 +699,45 @@ strong {
 
 .schedule-table th + td {
   border-bottom: 0;
+  height: 200px;
+}
+@media screen and (max-width: 780px){
+  .schedule-table th + td {
+    border-bottom: 0;
+    height: 100%;
+  }
 }
 
 .schedule-table thead th:last-child {
   border-right-color: transparent;
 }
 
-.schedule-table .pop-background-image {
+.schedule-table .glivro-background-image {
   background-image: url('../images/Personagens/geraltLivro.png');
 }
 
-.schedule-table .rock-background-image {
-  background-image: url('../images/artists/abstral-official-bdlMO9z5yco-unsplash.jpg');
+.schedule-table .gserie-background-image {
+  background-image: url('../images/Personagens/geraltSerie.jpg');
 }
 
-.schedule-table .country-background-image {
-  background-image: url('../images/artists/soundtrap-rAT6FJ6wltE-unsplash.jpg');
+.schedule-table .gjogo-background-image {
+  background-image: url('../images/Personagens/geraltJogo.jpg');
+}
+
+.schedule-table .cserie-background-image {
+  background-image: url('../images/Personagens/CiriSerie.jpeg');
+}
+
+.schedule-table .cjogo-background-image {
+  background-image: url('../images/Personagens/CiriJogo.jpg');
+}
+
+.schedule-table .yserie-background-image {
+  background-image: url('../images/Personagens/YenniferSerie.jpg');
+}
+
+.schedule-table .yjogo-background-image {
+  background-image: url('../images/Personagens/YenneferJogo.jpg');
 }
 
 .table-background-image-wrap {
